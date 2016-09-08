@@ -1,0 +1,17 @@
+<html>
+<script>
+function goBack() {
+	window.history.back();
+}
+</script>
+<body>
+<h1> Are you sure you want to delete {{rName}}? </h1>
+
+<form actions="{{url_for('deleteRestaurant', restaurant_id = restaurant_id)}}" method="POST"> 
+	<input type='submit', value = 'Delete'>
+</form>
+
+<button onclick='goBack()'>Cancel</button>
+</body>
+
+</html>

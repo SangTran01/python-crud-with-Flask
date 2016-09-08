@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome</title>
+</head>
+<body>
+<h1>Welcome User</h1>
+
+<h2>Here are the restaurants</h2>
+
+{%  for r in restaurants %}
+<p><a href="/restaurants/{{r.id}}/">{{r.name}}</a></p>
+
+<p>GET</p>
+<a href="/restaurants/{{r.id}}/delete/">Delete Restaurant</a>
+
+<hr>
+<br><br>
+{% endfor %}
+</body>
+</html>
