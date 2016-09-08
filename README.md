@@ -1,4 +1,4 @@
-rdb-fullstack
+Python example using flask framework
 =============
+Python example using flask framework with crud
 
-Common code for the Relational Databases and Full Stack Fundamentals courses
